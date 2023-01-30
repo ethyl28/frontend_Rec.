@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="b-example-divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-5 py-5">
+          <div>
+            <div class="share">
+            <p> <i>"Help's Everyone boost their Confidence of<br> Cooking"</i></p>
+            <h2>Share Your Masterpiece</h2>
+          </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+            <i class='fas fa-arrow-alt-circle-up'></i> Upload Recipe
+            </button>
+          </div>
+
+      </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466__340.jpg"
+          />
+          <h2 class="modal-title">Add your Recipe Here!</h2>
+          <br />
+          <div class="modal-header"></div>
+          <div class="modal-body">
+            <form role="form">
+              <p>
+                <label for="dinput">Recipe Name</label><br />
+                <input id="dinput" type="text" placeholder="Recipe..." /><br>
+
+                <label for="dinput">Price: </label><br>$
+                <input id="price"  type="number" placeholder="0.00" min="5">
+              </p>
+
+
+              <p>
+                <label for="dta">Description</label><br />
+                <textarea
+                  id="dta"
+                  cols="60"
+                  rows="5"
+                  placeholder="Please input a short description about your recipe."
+                ></textarea>
+              </p>
+
+              <p>
+                <label for="dta">Ingredients</label><br />
+                <textarea
+                  id="dta"
+                  cols="60"
+                  rows="10"
+                  placeholder="Input Ingredients separeted by Comma."
+                ></textarea>
+              </p>
+
+              <p>
+                <label for="dta">Directions/Procedures</label><br />
+                <textarea
+                  id="dta"
+                  cols="60"
+                  rows="10"
+                  placeholder="Input Procedures or Directions separeted by Numbers."
+                ></textarea>
+              </p>
+
+              <p>
+                <label for="dta">Cooking Tips</label><br />
+                <textarea
+                  id="dta"
+                  cols="60"
+                  rows="5"
+                  placeholder="A note or Reminders to the cooker."
+                ></textarea>
+              </p>
+
+              <hr />
+
+              <label for="recipe-time">Prep Time</label><br />
+              <input
+                id="recipe-time"
+                type="text"
+                placeholder="Preparation time"
+              /><br />
+
+              <label for="cooking-time">Cooking Time</label><br />
+              <input
+                id="cooking-time"
+                type="text"
+                placeholder="Cooking time"
+              /><br />
+
+              <label for="servings">Servings</label><br />
+              <input id="servings" type="text" placeholder="Servings" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="dialogbutton"
+              type="button"
+              class="button btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              id="dialogbuttonedit"
+              type="button"
+              class="button btn-primary"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
