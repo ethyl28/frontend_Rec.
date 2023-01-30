@@ -1,0 +1,110 @@
+body{
+  background: url('https://cdn.mos.cms.futurecdn.net/cwUpQEt7dJMDq5mhNN5sxW.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 100vh;
+}
+
+.form-wrapper {
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.red{
+  color: red;
+}
+
+.share > p {
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 200px;
+  margin-left: 195px;
+}
+.share > h2{
+  margin-left: 50px;
+}
+.btn{
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 360px;
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+
+
+.form-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 1120;
+  padding-left: 10px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.time__input {
+  max-width: 100px;
+  margin-right: 25px;
+}
+
+h2{
+  text-align: center;
+}
+span{
+  width: 15px;
+  height: 25px;
+}
+.btn-remove-image{
+  position: absolute;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: auto;
+  text-align: center;
+}
+
+mat-grid-title{
+  border: 1px solid #eee;
+}
+.dropzone{
+  height: 150px;
+  min-width: 100px;
+  display: table;
+  background-color: #eee;
+  width: 300px;
+  border: dashed 1px #aaa;
+  border-radius: 10px;
+
+}
+.text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.centered{
+  text-align: center;
+}
+.browse-button{
+  color: blue;
+  cursor: pointer;
+}
+
